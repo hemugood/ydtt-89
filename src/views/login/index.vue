@@ -79,8 +79,9 @@ export default {
         forbidClick: true
       })
       try {
-        const res = await login(user)
-        console.log(res)
+        const { data } = await login(user)
+        this.$store.commit('setUser', data.data)
+        // console.log(res)
         this.$toast.success('登录成功')
       } catch (err) {
         console.log('登录失败', err)
