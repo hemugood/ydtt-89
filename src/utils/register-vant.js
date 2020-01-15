@@ -1,7 +1,10 @@
 import Vue from 'vue'
+
+// 加载
 import {
   Button,
-  Cell, CellGroup,
+  Cell,
+  CellGroup,
   Icon,
   NavBar,
   Field,
@@ -13,8 +16,15 @@ import {
   Grid,
   GridItem,
   Dialog,
-  List
+  List,
+  Tab,
+  Tabs,
+  PullRefresh,
+  Popup,
+  Search
 } from 'vant'
+
+// 注册
 Vue.use(Button)
   .use(Cell)
   .use(CellGroup)
@@ -30,3 +40,8 @@ Vue.use(Button)
   .use(GridItem)
   .use(Dialog)
   .use(List)
+  .use(Tab)
+  .use(Tabs)
+  .use(PullRefresh)
+  .use(Popup)
+  .use(Search)
